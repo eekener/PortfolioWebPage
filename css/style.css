@@ -1,20 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+    
+}
 
 .header{
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
     height: 100vh;
+    -ms-flex-line-pack: center;
     align-content: center;
-    background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.7)),
-            to(rgba(0, 0, 0, 0.7))
-        ),
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.11)), to(rgba(0, 0, 0, 0.6))),
         url(img/background.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.6)),
         url(img/background.jpg);
+    background-attachment: scroll;
     
 }
 
@@ -23,14 +27,14 @@
 
 .header h1{
     color: #fff;
-    font-size: 1000%;
+    font-size: 600%;
     font-weight: 210;
-    text-align: center;
 }
 
 .header h2{
    text-align: center;
     color: #fff;
+    font-size: 200%;
 }
 
 .about-button{
@@ -46,7 +50,7 @@
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 150%;
+    font-size: 100%;
     color: #fff;
     text-decoration: none;
 }
@@ -61,7 +65,7 @@
     text-decoration: none;
 }
 
-i{
+.arrow{
     color:#fff;
     font-size: 250%;
 }
@@ -85,41 +89,41 @@ i{
     background-repeat:   no-repeat;
     background-position: center center; 
     height:100vh;
-    align-content: center;
+    -ms-flex-line-pack: center;
 }
 
 .left-col{
     background-color: #171936;
-    text-align: center;
-    text-align: justify;
 }
 
 .right-col{
-    background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.7)),
-            to(rgba(0, 0, 0, 0.7))
-        ),
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.11)), to(rgba(0, 0, 0, 0.6))),
         url(img/aboutme.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.6)),
         url(img/aboutme.jpg);
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
+    -ms-flex-line-pack: center; 
     align-content: center;
 }
 
 .new-text{
-    margin: auto;
+    font-size: 100%;
     margin-top: 40%;
+    
+}
+
+.new-text h2{
+    font-weight: bold;
+}
+.new-text p{
+    text-align: justify;
 }
 
 .left-col h2{
-    text-align: center;
     color: #fff;
-    
+    font-size: 100%;
 }
 
 .left-col p{
@@ -138,18 +142,23 @@ i{
 
 .up-button{
     border: 1px solid #7e7979;
-    padding: 10px;
+    padding: 4px;
     border-radius: 50%;
     background-color: #313030;
 }
 
 .services-button{
-    align-content: center;
+    -ms-flex-line-pack: center;
      text-align: center;
      position: absolute;
-     top:85%;
-    left:25%;
+    top:85%;
+    left:41.5%;
 }
+
+.services-button a{
+    
+}
+
 
 .go-down{
     text-align: center;
@@ -163,44 +172,47 @@ i{
 .my-skills{
     height:100vh;
     background-color: #cbcbcb;
-    align-content: center;
-    text-align: center;
+    -ms-flex-line-pack: center;
     color: #000;
+    align-content: center;
+    
 }
 
-.skill-header{
+.skill-header h1{
     color: #171936;
-    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: -7%;
 }
 
-.skills{
-    margin: auto auto;
+.mytable{
+    margin: auto ;
 }
+
+
 
 .table h2{
     text-align: center;
-    margin-top: 20px;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 .my-skills i{
     color: #000;
-    font-size: 300%;
-    margin-top: 20px;
+    font-size: 250%;
 }
 
 
 .table p{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: justify;
 }
 
-.table{
-    border-collapse: collapse;
-}
+
 
 .table td,
 .table th{
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 table tr:first-child td {
@@ -222,15 +234,10 @@ table tr th:last-child {
 
 .skills-section{
     height:100vh;
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
-    background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.7)),
-            to(rgba(0, 0, 0, 0.7))
-        ),
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.11)), to(rgba(0, 0, 0, 0.6))),
         url(img/skills.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.6)),
         url(img/skills.jpg);
@@ -248,6 +255,7 @@ table tr th:last-child {
     width: 200px;
     margin-right: 50px;
     margin-top: 50px;
+    -webkit-box-shadow: 5px 5px rgba(21, 21, 21, 0.53);
     box-shadow: 5px 5px rgba(21, 21, 21, 0.53);
     background-color: rgba(133, 185, 212, 0.92);
 }
@@ -258,7 +266,7 @@ table tr th:last-child {
 }
 
 .box-element p{
-    margin: 30px;
+    margin: 15%;
 }
 
 .skillheader{
@@ -272,12 +280,13 @@ table tr th:last-child {
     background-color: #4d4d4d;
 }
 
+
 .my-work img{
-    display: inline-block;
+      
 }
 
 .my-work a{
-    display: inline-block;
+ 
 }
 
 
@@ -293,65 +302,68 @@ table tr th:last-child {
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
-    height:900px;
+    height:100vh;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
 .right-side{
-    background-color: #1c1c1c;
-    text-align: center;
-    align-content: center;
-}
-
-.left-side{
-    background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.7)),
-            to(rgba(0, 0, 0, 0.7))
-        ),
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72)), to(rgba(0, 0, 0, 0.6))),
         url(img/contact.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.6)),
         url(img/contact.jpg);
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
+    -ms-flex-line-pack: center; 
     align-content: center;
     text-align: center;
+}
+
+.left-side{
+    background-color: #1c1c1c;
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    
 }
 
 
 .form-box{
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
     color: #fff;
     margin: auto auto;
-    margin-top: 25%;
-}
-
-.header-contact{
-    color: #fff;
-    position: absolute;
-    left:45%;
-    z-index: 100;
-    top:510%;
-    border-bottom: 2px solid #fff;
-}
-
-.info{
-    color: rgb(227, 227, 227);
-    font-size: 300%;
-    display: inline-block;
-    align-content: center;
-    text-align: center;
     margin-top: 35%;
 }
 
-.left-side i{
-    margin-right: 25px;
-        color: #ffffff;
+
+
+
+.info{
+    color: rgb(227, 227, 227);
+    font-weight: bold;
+    font-size: 170%;
+    margin: auto;
+    margin-top: 40%;
+    text-align: center;
 }
+
+.my-icons{
+    margin: auto auto;
+    top:5%;
+    font-size: 80%;
+}
+
+.socials:link,
+.socials:visited{
+    color: #fff;
+    font-size: 200%;
+    padding-right: 15px;
+}
+
+
 .fa-linkedin:hover,
 .fa-linkedin:active
 {
@@ -388,11 +400,29 @@ table tr th:last-child {
     color:#4078c0;
 }
 
+.form-messages {
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    top:90px;
+}
+
+.success {
+    background-color: #26bf44;
+    margin: auto;
+}
+.error{
+    background-color: #d12e2e;
+    margin: auto;
+}
 /* FOOTER */
 
-.footer{
+.myfooter{
     height:100px;
-    align-content: center;
     background-color: #3e3e3e;
 }
 
@@ -402,3 +432,49 @@ table tr th:last-child {
     text-align: center;
     margin: auto auto;
 }
+
+/* NAVBAR */
+.navigate{
+    display: none;
+    z-index: 100;
+    font-size: 100%;
+}
+
+.topnav {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    height: 6%;
+}
+
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #646464;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav p{
+    float: left;
+    display: block;
+    color: #646464;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav a:hover{
+    color: #0833aa;
+}
+
+
+
+
+

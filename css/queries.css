@@ -1,0 +1,74 @@
+@media all and (max-width: 1400px) { /* screen size until 1200px */
+    body {
+        font-size: 0.9em; /* 1.2x default size */
+        }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    body {
+        font-size: 0.8em; /* 1.2x default size */
+        }
+    .about-me{
+        height: 80vh;
+    }
+    .contact{
+     height: 70vh;   
+    }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 0.7em; /* 0.8x default size */
+        }
+    
+    .mytable{
+     right:17%;
+}
+    
+    .new-text{
+        margin-top: 15%;
+        font-size: 95%;
+    }
+    
+.box-element{
+    width: 110px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.services-button{
+    
+    left:17%;
+}
+    
+    .info{
+    font-size: 100%;
+}
+
+    .contact{
+     height: 80vh;   
+    }
+    
+    .topnav a {
+    font-size: 50%;
+        float: right;
+        padding-right: 8px;
+            padding-left:8px;
+}
+
+    
+    
+.topnav p{
+    font-size: 50%;
+}
+    .skill-header h1{
+    display: none;
+}
+}
+@media all and (max-width: 320px) { /* screen size until 500px */
+    body {
+        font-size: 0.6em; /* 0.8x default size */
+        }
+    
+    .mytable{
+     right:25%;
+}
+    
+    }
